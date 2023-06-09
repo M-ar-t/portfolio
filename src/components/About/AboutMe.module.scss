@@ -1,0 +1,102 @@
+@import "../Home/Home.module.scss";
+
+$backgroundBox: #0b0a0f7f;
+$animationTime: #{1.5}s;
+
+@keyframes hideBlok {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes anime {
+  0% {
+    width: 60px;
+    height: 60px;
+    background: $backgroundBox;
+    box-shadow: 20px 20px 20px rgba(144, 101, 126, 0.263),
+      0 0 0 rgba(244, 132, 197, 0.663), 0 0 0 rgba(244, 132, 197, 0.663) inset,
+      2px 2px 2px rgba(244, 132, 197, 0.663) inset;
+  }
+  25% {
+    width: 60px;
+    height: 60px;
+    background: $backgroundBox;
+    box-shadow: 20px 20px 20px rgba(144, 101, 126, 0.263),
+      0 0 0 rgba(244, 132, 197, 0.663), 0 0 0 rgba(244, 132, 197, 0.663) inset,
+      2px 2px 2px rgba(244, 132, 197, 0.663) inset;
+  }
+  50% {
+    width: 60px;
+    height: 240px;
+    background: $backgroundBox;
+    box-shadow: 20px 20px 20px rgba(144, 101, 126, 0.263),
+      0 0 0 rgba(244, 132, 197, 0.663), 0 0 0 rgba(244, 132, 197, 0.663) inset,
+      2px 2px 2px rgba(244, 132, 197, 0.663) inset;
+  }
+  100% {
+    width: 800px;
+    height: 300px;
+    background: $backgroundBox;
+    box-shadow: 20px 20px 20px rgba(144, 101, 126, 0.263),
+      0 0 0 rgba(244, 132, 197, 0.663), 0 0 0 rgba(244, 132, 197, 0.663) inset,
+      2px 2px 2px rgba(244, 132, 197, 0.663) inset;
+  }
+}
+.aboutMe {
+  background-color: $ContainerBackground;
+  height: 100vh;
+  padding: 0px 0px 0px 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aboutMe__header {
+  font-size: 50px;
+  font-weight: 600;
+  padding: 60px 0px;
+  animation: hideBlok $animationTime;
+}
+@supports (-webkit-text-stroke: 1px white) {
+  .aboutMe__header {
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    text-shadow: 0 0 30px rgba(244, 132, 197, 0.663),
+      0 0 102px rgba(215, 155, 191, 0.527), 0 0 151px rgba(255, 0, 153, 0.197);
+  }
+}
+.aboutMe__box {
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 60px;
+  background: #f0f0f0;
+  box-shadow: 0 0 0 rgba(244, 132, 197, 0.663), 0 0 0 rgba(244, 132, 197, 0.663),
+    10px 10px 10px rgba(244, 132, 197, 0.663) inset,
+    -10px -10px 10px rgba(244, 132, 197, 0.663) inset;
+  animation: anime 1s ease-out;
+  animation-fill-mode: forwards;
+}
+.aboutMe__list {
+  animation: hideBlok $animationTime;
+}
+.neonBtn {
+  animation: hideBlok $animationTime;
+}
+.aboutMe__item {
+  color: white;
+  font-size: 16px;
+  line-height: 2em;
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px;
+}
+.aboutMe__itemImg {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}

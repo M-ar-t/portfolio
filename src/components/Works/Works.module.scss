@@ -1,0 +1,10 @@
+@import "../Home/Home.module.scss";
+
+$backgroundBox: #0b0a0f7f;
+$animationTime: #{1.5}s;
+
+.works{
+    background-color: $ContainerBackground;
+    height: 100vh;
+    padding: 0px 0px 0px 120px;
+  }

@@ -1,9 +1,12 @@
+$ContainerBackground:#0b0a0fe9;
+
 .home{
-    background-color: #0b0a0fe1;
+    background-color: $ContainerBackground;
     height: 100vh;
     padding: 0px 0px 0px 120px;
     display:flex;
     gap: 70px;
+
 }
 .home__info{
     flex-basis: 60%;
@@ -13,6 +16,7 @@
 .home__picBlok{
     flex-basis: 40%;
     position: relative;
+
 }
 .home__pic{
     position: absolute;
@@ -21,15 +25,27 @@
     height: 700px;
     width: auto;
     z-index: 10;
+    animation: showRight 2s;
     filter: drop-shadow(80px 20px 150px rgba(255, 147, 203, 0.6)) // тень #1
     drop-shadow(5px 5px 15px rgba(255, 147, 203, 0.6)) // тень #2
     drop-shadow(75px -5px 15px rgba(240, 164, 190, 0.15)); // тень #3
 }
 
+@keyframes showTop {
+    from {top:-50%; opacity: 0;}
+    to {top:0; opacity: 100%;}
+}
+@keyframes showRight {
+    from {opacity:0;}
+    to {opacity:100%;}
+}
+
 .home__h1{
+    position: relative;
     font-size: 60px;
     font-weight: 600;
     margin-bottom: 40px;
+    animation: showTop 2s;
 }
 
 @supports (-webkit-text-stroke: 1px white) {
@@ -40,15 +56,17 @@
         0 0 30px rgba(244, 132, 197, 0.663),
         0 0 102px rgba(215, 155, 191, 0.527),
         0 0 151px rgba(255, 0, 153, 0.197);
-        animation: pulsate 0.11s ease-in-out infinite alternate;     
+      
     }
 }
-    
+
 .home__h2{
+
     font-size: 30px;
     height: 30px;
     margin-bottom: 25px;
     letter-spacing: 0.75em;
+
 }
 .home__text{
     font-size: 16px;
