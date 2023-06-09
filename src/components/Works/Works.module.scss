@@ -1,10 +1,91 @@
 @import "../Home/Home.module.scss";
+@import "../About/AboutMe.module.scss";
 
 $backgroundBox: #0b0a0f7f;
 $animationTime: #{1.5}s;
 
 .works{
     background-color: $ContainerBackground;
-    height: 100vh;
+    min-height: 100vh;
     padding: 0px 0px 0px 120px;
-  }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.workContainer{
+    display: grid;
+    grid-template-columns: repeat(3,350px);
+    gap:40px;
+    margin-bottom: 50px;
+}
+.workContainer__item{
+    width: 320px;
+    height: 300px;
+    background-color: $backgroundBox;
+    border-radius: 6px;
+    padding: 15px;
+    box-shadow: rgba(244, 132, 197, 0.663) 0px 5px 15px;
+}
+.workContainer__pic{
+    height: 200px;
+    width: 320px;
+    object-fit: cover;
+    border-radius: 6px;
+    opacity: 60%;
+    margin-bottom: 30px;
+}
+.workContainer__item:nth-child(1),
+.workContainer__item:nth-child(3),
+.workContainer__item:nth-child(5),
+.workContainer__item:nth-child(7){
+    .workContainer__pic{
+        object-position: left;
+    }
+
+}
+.workContainer__header{
+    color: white;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.demo{
+    color: #FFB7EA;
+    margin-right: 10px;
+}
+.link:hover{
+    .arrow{
+        transform: translate(10px, 0px);
+        transition: .3s all;
+    }
+}
+.link{
+    .arrow{
+        transition: .3s all;
+    }
+}
+
+
+.neonBtn{
+    margin-bottom: 50px;
+}
+.filterBtns{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.filterBtns__item{
+    border:none;
+    background-color: #FFB7EA;
+    color: #0b0a0fa8;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 15px;
+}
+.filterBtns__item:hover{
+    background-color: #ffb7e9cc;
+}
+.filterBtns__item:active{
+    background-color: #ffb7e9cc;
+}

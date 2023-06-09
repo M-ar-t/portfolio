@@ -9,7 +9,7 @@ import portfolio from "../../img/portfolioPic.png"
 const AboutMe = () =>{
     return(
         <div className={s.aboutMe}>
-            <h1 className={s.aboutMe__header}>About me</h1>
+            <h1 className={s.header}>About me</h1>
           
             <div className={s.aboutMe__box}>
                 <ul className={s.aboutMe__list}>

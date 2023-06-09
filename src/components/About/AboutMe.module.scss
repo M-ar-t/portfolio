@@ -1,7 +1,7 @@
 @import "../Home/Home.module.scss";
 
 $backgroundBox: #0b0a0f7f;
-$animationTime: #{1.5}s;
+$animationTime: #{1}s;
 
 @keyframes hideBlok {
   0% {
@@ -56,14 +56,14 @@ $animationTime: #{1.5}s;
   flex-direction: column;
   align-items: center;
 }
-.aboutMe__header {
+.header {
   font-size: 50px;
   font-weight: 600;
   padding: 60px 0px;
   animation: hideBlok $animationTime;
 }
 @supports (-webkit-text-stroke: 1px white) {
-  .aboutMe__header {
+  .header {
     color: transparent;
     -webkit-text-stroke: 1px white;
     text-shadow: 0 0 30px rgba(244, 132, 197, 0.663),
@@ -82,7 +82,7 @@ $animationTime: #{1.5}s;
   animation-fill-mode: forwards;
 }
 .aboutMe__list {
-  animation: hideBlok $animationTime;
+  animation: hideBlok 1.4s;
 }
 .neonBtn {
   animation: hideBlok $animationTime;

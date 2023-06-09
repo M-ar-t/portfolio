@@ -10,7 +10,7 @@ import reduxLogo from "../../img/redux.jpeg"
 const Scills = () =>{
     return(
         <div className={s.scills}>
-            <h1 className={s.scills__header}>My scills</h1>
+            <h1 className={s.header}>My scills</h1>
             <div className={s.scills__container}>
 
                 <div className={`${s.scills__partName} ${s.basic}`}>Basic</div>
