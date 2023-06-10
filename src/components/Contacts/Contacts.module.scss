@@ -2,6 +2,14 @@ $ContainerBackground:#0b0a0fe9;
 @import "../About/AboutMe.module.scss";
 
 $backgroundBox: rgb(21, 21, 25);
+@keyframes ShowBlok{
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 100%;
+    }
+  }
 .contacts{
     background-color: $ContainerBackground;
     height: 100vh;
@@ -15,6 +23,7 @@ $backgroundBox: rgb(21, 21, 25);
 }
 .container{
     margin-bottom: 50px;
+    animation: ShowBlok 1s;
 }
 
 .contactItem{
@@ -73,6 +82,10 @@ $backgroundBox: rgb(21, 21, 25);
     margin-bottom: 50px;
     position: relative;
     width: 270px;
+    animation: none;
+}
+.neonBtn:focus{
+outline: none;
 }
 .neonBtn:hover::after{
         transition-delay: 1s;

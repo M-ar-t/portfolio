@@ -5,7 +5,7 @@ import git from "../../img/gitHub.png"
 import telega from "../../img/telega.png"
 import vk from "../../img/vk.png"
 import ContactItem from "./ContactItem"
-// import "../../Portfolio.docx" 
+import file from "../../Portfolio.docx" 
 
 const Contacts = () =>{
 const data =[
@@ -47,13 +47,13 @@ const data =[
 
             </div>
             
-           <NavLink  download="../../Portfolio.docx" className={s.neonBtn}>
+           <a href={file} download  className={s.neonBtn}>
                     <span className={`${s.neonBtn__line} ${s.topLine}`}></span>
                     <span className={`${s.neonBtn__line} ${s.rightLine}`}></span>
                     <span className={`${s.neonBtn__line} ${s.bottomLine}`}></span>
                     <span className={`${s.neonBtn__line} ${s.leftLine}`}></span>
                     Download resume
-            </NavLink>
+            </a>
            
         </div>
     )
