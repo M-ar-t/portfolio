@@ -30,6 +30,9 @@ $animationTime: #{1.5}s;
         opacity: 100%
     }
 }
+.header{
+    animation:none;
+}
 .scills{
     background-color: $ContainerBackground;
     height: 100vh;
@@ -81,7 +84,7 @@ $animationTime: #{1.5}s;
     z-index: 10;
     margin-bottom: 50px;
     border-radius: 20px;
-    padding: 30px 40px;
+    padding: 30px 40px 10px 40px;
     background: $backgroundBox;
     box-shadow: 20px 20px 20px rgba(144, 101, 126, 0.263),
       0 0 0 rgba(244, 132, 197, 0.663), 0 0 0 rgba(244, 132, 197, 0.663) inset,
@@ -94,7 +97,7 @@ $animationTime: #{1.5}s;
     text-transform: uppercase;
     text-align: left;
     letter-spacing: 0.15em;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
     animation: showSlowRight 1s;
 }
 

@@ -9,14 +9,11 @@ const Home = () =>{
 
     useEffect(() => {
         const timeoutIds = [];
-
         "Frontend developer".split('').forEach((text,i)=>{
             const timeoutId = setTimeout(() => {
                 setSubtitle(prev => {
-                    console.log(...prev);
                     return [...prev, text]});
             }, 100 * i);
-
             timeoutIds.push(timeoutId);
         });
 
@@ -31,7 +28,11 @@ const Home = () =>{
             <div className={s.home__info}>
                 <h1 className={s.home__h1} >Hi, I'm <span>Maria Tkacheva</span></h1>
                 <h2 className={s.home__h2} >{subtitle}</h2>
-                <p className={s.home__text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <p className={s.home__text}>
+                I like to learn new things and improve my skills
+                 in the field of frontend development. 
+                I'm in search of a team for joint development and
+                 motivation for the best result!</p>
                 <NavLink to ="/about" className={s.neonBtn}>
                     <span className={`${s.neonBtn__line} ${s.topLine}`}></span>
                     <span className={`${s.neonBtn__line} ${s.rightLine}`}></span>

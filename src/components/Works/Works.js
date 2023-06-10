@@ -6,7 +6,7 @@ import housesScrin from "../../img/housesScrin.png"
 import calculatorScrin from "../../img/calculatorScrin.png"
 import modelingScrin from "../../img/modelingScrin.png"
 import testingScrin from "../../img/TestScrin.png"
-import userListScrin from "../../img/userListScrin.png"
+// import userListScrin from "../../img/userListScrin.png"
 import WorkItem from "./WorkItem"
 import { useState } from "react"
 
@@ -22,7 +22,7 @@ const Works = () =>{
         {
         header:"Landing page - Tours",
         pic: toursScrin,
-        link:"/",
+        link:"https://m-ar-t.github.io/Figma/",
         category: 1
         },
         {
@@ -49,12 +49,12 @@ const Works = () =>{
         link:"/",
         category: 3
         },
-        {
-        header:"User list",
-        pic: userListScrin,
-        link:"/",
-        category: 3
-        }
+        // {
+        // header:"User list",
+        // pic: userListScrin,
+        // link:"/",
+        // category: 3
+        // }
     ]
     const [data ,setData]=useState(dataArr)
     const [isActive ,setActive]=useState(0)
@@ -79,11 +79,15 @@ const Works = () =>{
         <div className={s.works}>
             <h1 className={s.header}>My works</h1>
             <div className={s.filterBtns}>
-                <button className={`${isActive===0 ? "filterBtns__item filterBtns__item_active" : "filterBtns__item"}`} 
-                onClick={(e)=>filterProj(e)}>All</button>
-                <button className={`${isActive===1 ? "filterBtns__item filterBtns__item_active" : "filterBtns__item"}`} onClick={(e)=>filterProj(e,1)}>Landing</button>
-                <button className={`${isActive===3 ? "filterBtns__item filterBtns__item_active" : "filterBtns__item"}`} onClick={(e)=>filterProj(e,3)}>ReactApp</button>
-                <button className={`${isActive===2 ? "filterBtns__item filterBtns__item_active" : "filterBtns__item"}`} onClick={(e)=>filterProj(e,2)}>Native JS</button>
+                
+                <button className={isActive===0 ? `${s.filterBtns__item} ${s.filterBtns__item_active}`: 
+                s.filterBtns__item} onClick={(e)=>filterProj(e)}>All</button>
+                <button className={isActive===1 ? `${s.filterBtns__item} ${s.filterBtns__item_active}`: s.filterBtns__item} 
+                onClick={(e)=>filterProj(e,1)}>Landing</button>
+                <button className={isActive===3 ? `${s.filterBtns__item} ${s.filterBtns__item_active}`: s.filterBtns__item}
+                onClick={(e)=>filterProj(e,3)}>ReactApp</button>
+                <button className={isActive===2 ? `${s.filterBtns__item} ${s.filterBtns__item_active}`: s.filterBtns__item}
+                 onClick={(e)=>filterProj(e,2)}>Native JS</button>
             </div>
             <div className={s.workContainer}>
                 {data.map((el,id)=> 

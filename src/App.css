@@ -364,6 +364,7 @@ textarea {
     padding: 0.2em 0;
 }
 
+
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Poppins';
@@ -383,18 +384,4 @@ body{
   font-family: 'Poppins';
   font-weight: 400;
   font-size: 16px;
-}
-
-.filterBtns__item{
-    border:none;
-    background-color: #FFB7EA;
-    color: #0b0a0fa8;
-    border-radius: 6px;
-    font-size: 16px;
-    font-weight: 600;
-    padding: 10px 15px;
-}
-.filterBtns__item_active{
-    color:white;
-    background-color: #858585;
 }
