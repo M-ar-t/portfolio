@@ -9,7 +9,7 @@ import Scills from './components/Scills/Scills';
 import Works from './components/Works/Works';
 
 AOS.init({
-  // once: true,
+  once: true,
  });
 
 function App() {

@@ -10,6 +10,7 @@ import userListScrin from "../../img/userListScrin.png"
 import WorkItem from "./WorkItem"
 import { useState } from "react"
 
+
 const Works = () =>{
     const dataArr =[
         {
@@ -56,9 +57,11 @@ const Works = () =>{
         }
     ]
     const [data ,setData]=useState(dataArr)
+    const [isActive ,setActive]=useState(0)
 
-    const filterProj=(e,num)=>{
-        
+    
+    const filterProj=(e,num=0)=>{
+        setActive(num)
         data.map(el => {
             switch (num) {
                 case 1:
@@ -68,8 +71,7 @@ const Works = () =>{
                 case 3:
                     return setData(dataArr.filter(el => el.category===3))
                 default:
-                    return setData(dataArr);
-                    
+                    return setData(dataArr);                   
             }
         })
     }
@@ -77,10 +79,11 @@ const Works = () =>{
         <div className={s.works}>
             <h1 className={s.header}>My works</h1>
             <div className={s.filterBtns}>
-                <button className={s.filterBtns__item} onClick={(e)=>filterProj(e)}>All</button>
-                <button className={s.filterBtns__item} onClick={(e)=>filterProj(e,1)}>Landing</button>
-                <button className={s.filterBtns__item} onClick={(e)=>filterProj(e,3)}>ReactApp</button>
-                <button className={s.filterBtns__item} onClick={(e)=>filterProj(e,2)}>Native JS</button>
+                <button className={`${isActive===0 ? "filterBtns__item filterBtns__item_active" : "filterBtns__item"}`} 
+                onClick={(e)=>filterProj(e)}>All</button>
+                <button className={`${isActive===1 ? "filterBtns__item filterBtns__item_active" : "filterBtns__item"}`} onClick={(e)=>filterProj(e,1)}>Landing</button>
+                <button className={`${isActive===3 ? "filterBtns__item filterBtns__item_active" : "filterBtns__item"}`} onClick={(e)=>filterProj(e,3)}>ReactApp</button>
+                <button className={`${isActive===2 ? "filterBtns__item filterBtns__item_active" : "filterBtns__item"}`} onClick={(e)=>filterProj(e,2)}>Native JS</button>
             </div>
             <div className={s.workContainer}>
                 {data.map((el,id)=> 
