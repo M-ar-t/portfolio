@@ -1,4 +1,3 @@
-import { NavLink } from "react-router-dom"
 import s from "./Contacts.module.scss"
 import mail from "../../img/mail.png"
 import git from "../../img/gitHub.png"

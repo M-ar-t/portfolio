@@ -16,7 +16,7 @@ const Works = () =>{
         {
         header:"Cosmetic store",
         pic: cosmeticStore,
-        link:"/",
+        link:"https://m-ar-t.github.io/Cosmetic-STORE/",
         category: 3
         },
         {
@@ -28,25 +28,25 @@ const Works = () =>{
         {
         header:"Landing page - Houses",
         pic: housesScrin,
-        link:"/",
+        link:"https://m-ar-t.github.io/figma-featured-house/",
         category: 1
         },
         {
         header:"Calculator",
         pic: calculatorScrin,
-        link:"/",
+        link:"https://m-ar-t.github.io/calculator/",
         category: 3
         },
         {
         header:"Simulation modeling",
         pic: modelingScrin,
-        link:"/",
+        link:"https://m-ar-t.github.io/Modeling/index.html",
         category: 2
         },
         {
         header:"Testing in psychology",
         pic: testingScrin,
-        link:"/",
+        link:"https://m-ar-t.github.io/Questionnaire/",
         category: 3
         },
         // {
@@ -93,7 +93,7 @@ const Works = () =>{
                 {data.map((el,id)=> 
                 <WorkItem key={id} pic ={el.pic} header ={el.header} link ={el.link}/>)}        
             </div>
-             <NavLink to ="/works" className={s.neonBtn}>
+             <NavLink to ="/contacts" className={s.neonBtn}>
                     <span className={`${s.neonBtn__line} ${s.topLine}`}></span>
                     <span className={`${s.neonBtn__line} ${s.rightLine}`}></span>
                     <span className={`${s.neonBtn__line} ${s.bottomLine}`}></span>

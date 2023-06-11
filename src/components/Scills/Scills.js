@@ -44,7 +44,8 @@ const Scills = () =>{
                 </div>
                 <div className={s.scills__additional}>
                     <ul className={s.scills__list}>
-                        <li className={s.scills__listElem}>Git</li>
+                        {/* <li className={s.scills__listElem}>Git</li> */}
+                        <li className={s.scills__listElem}>JQuery</li>
                         <li className={s.scills__listElem}>GitHub</li>
                         <li className={s.scills__listElem}>BEM</li>
                         <li className={s.scills__listElem}>OOP</li>
