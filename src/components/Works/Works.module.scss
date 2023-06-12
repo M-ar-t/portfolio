@@ -99,7 +99,7 @@ $animationTime: #{1.5}s;
     margin-bottom: 50px;
 }
 .filterBtns{
-    width: 30%;
+    width: 400px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
@@ -140,9 +140,6 @@ $animationTime: #{1.5}s;
         grid-template-columns: repeat(2,350px);
         gap:40px;
     }
-    .filterBtns{
-        width: 40%;
-    }
 }
 @media (max-width:920px){
     .workContainer{
@@ -150,6 +147,7 @@ $animationTime: #{1.5}s;
         gap:40px;
     }
     .filterBtns{
+        width: 250px;
        display: grid;
        grid-template-columns: repeat(2,auto);
        gap: 15px;
