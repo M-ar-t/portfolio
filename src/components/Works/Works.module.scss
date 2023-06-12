@@ -1,7 +1,7 @@
 @import "../Home/Home.module.scss";
 @import "../About/AboutMe.module.scss";
 
-
+@import "./WorksMedia.module.scss";
 
 $backgroundBox: #0b0a0f7f;
 $animationTime: #{1.5}s;
@@ -112,6 +112,7 @@ $animationTime: #{1.5}s;
     font-size: 16px;
     font-weight: 600;
     padding: 10px 15px;
+    margin-right: 10px;
 }
 .filterBtns__item:hover,
 .filterBtns__item:focus{
@@ -126,4 +127,74 @@ $animationTime: #{1.5}s;
 
 .neonBtn:focus, button:hover{
     outline: none;
+}
+
+
+.burger{
+    display: none;
+} 
+
+
+@media (max-width:1300px){
+    .workContainer{
+        grid-template-columns: repeat(2,350px);
+        gap:40px;
+    }
+    .filterBtns{
+        width: 40%;
+    }
+}
+@media (max-width:920px){
+    .workContainer{
+        grid-template-columns: repeat(1,350px);
+        gap:40px;
+    }
+    .filterBtns{
+       display: grid;
+       grid-template-columns: repeat(2,auto);
+       gap: 15px;
+    }
+    .filterBtns__item{
+        border:none;
+        background-color: #FFB7EA;
+        color: #0b0a0fa8;
+        border-radius: 6px;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 10px 15px;
+    }
+}
+@media (max-width:768px){
+    .works{
+        padding: 50px 0px 0px 0px;
+    }
+ 
+}
+@media (max-width:600px){
+    .filterBtns{
+        grid-template-columns: repeat(1,auto);
+        gap: 10px;
+        width: auto;
+        padding: 0px 10px;
+     }
+
+    .filterBtns__item{
+        width: 350px;
+        padding: 10px 15px;
+        margin: 0px;
+    }
+}
+@media (max-width:390px){
+    .filterBtns__item{
+        width: 200px;
+    }
+    .workContainer{
+        grid-template-columns: repeat(1,auto);
+        text-align: center;
+    }
+    .workContainer__item,
+    .workContainer__pic{
+        width: 220px;
+      
+    }
 }

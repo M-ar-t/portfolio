@@ -2,21 +2,19 @@ $ContainerBackground:#0b0a0fe9;
 
 .home{
     background-color: $ContainerBackground;
-    height: 100vh;
+    min-height: 100vh;
     padding: 0px 0px 0px 120px;
     display:flex;
     gap: 70px;
-
 }
 .home__info{
     flex-basis: 60%;
-    padding: 220px 0px 0px 60px;
+    padding: 220px 20px 0px 60px;
     color:white;
 }
 .home__picBlok{
     flex-basis: 40%;
     position: relative;
-
 }
 .home__pic{
     position: absolute;
@@ -46,6 +44,7 @@ $ContainerBackground:#0b0a0fe9;
     font-weight: 600;
     margin-bottom: 40px;
     animation: showTop 2s;
+    line-height: 1.2em;
 }
 
 @supports (-webkit-text-stroke: 1px white) {
@@ -63,9 +62,10 @@ $ContainerBackground:#0b0a0fe9;
 .home__h2{
 
     font-size: 30px;
-    height: 30px;
+    min-height: 30px;
     margin-bottom: 25px;
     letter-spacing: 0.75em;
+    line-height: 2em;
 
 }
 .home__text{
@@ -88,6 +88,7 @@ $ContainerBackground:#0b0a0fe9;
     letter-spacing: .1em;
     overflow: hidden;
     transition: .2s;
+    margin-bottom: 50px;
 }
 
 .neonBtn:hover{
@@ -152,4 +153,76 @@ $ContainerBackground:#0b0a0fe9;
     height: 100%;
     background: linear-gradient(0deg, 
     transparent, rgb(248, 134, 177));
+}
+
+
+@media (max-width:1415px){
+    .home__h2{
+        font-size: 24px;
+    }
+    .home__h1{
+        font-size: 50px;
+    }
+}
+@media (max-width:1200px){
+    .home__info{
+        padding: 80px 40px 0px 60px;
+    }
+    .home__pic{
+        height: 600px;
+    }
+    .home__h2{
+        font-size: 18px;
+    }
+    .home__h1{
+        font-size: 46px;
+    }
+}
+@media (max-width:1000px){
+    .home{
+      flex-direction: column;
+      gap:10px;
+      align-items: center;
+      justify-content: center;
+    }
+    .home__pic{
+        position: static;
+    }
+    .home__picBlok{
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .home__info{
+        padding: 80px 40px 0px 60px;
+        text-align: center;
+    }
+    .home__text{
+        text-align: center;
+    }
+}
+
+@media (max-width:768px){
+    .home{
+        padding: 50px 0px 0px 0px;
+    }   
+}
+@media (max-width:480px){
+    .home__h2{
+        font-size: 16px;
+        line-height: 2em;
+    }
+    .home__h1{
+        font-size: 38px;
+    }
+    .home__pic{
+        height: 300px;
+        width: 300px;
+        object-fit: scale-down;
+    }
+}
+@media (max-width:300px){  
+    .home__pic{
+        width: 250px;
+        object-fit: scale-down;
+    }
 }

@@ -4,7 +4,11 @@ import { NavLink } from 'react-router-dom';
 const Nav = () =>{
     return(
         <div className={s.nav}>
+           
            <div className={s.nav__imgBlok}> <img className={s.nav__img} src = {bear} alt="logo"/></div>
+           <div className={s.burger}>
+                <span></span>
+            </div>
             <ul className={s.nav__list}>
                 <NavLink to="/"  className={({ isActive }) => isActive ? s.nav__item_active : s.nav__item}>Home</NavLink>
                 <NavLink to="/about" className={({ isActive }) => isActive ? s.nav__item_active : s.nav__item}>About</NavLink>

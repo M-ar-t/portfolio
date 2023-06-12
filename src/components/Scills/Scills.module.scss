@@ -35,7 +35,7 @@ $animationTime: #{1.5}s;
 }
 .scills{
     background-color: $ContainerBackground;
-    height: 100vh;
+    min-height: 100vh;
     padding: 0px 0px 0px 120px;   
     display: flex;
     flex-direction: column;
@@ -45,6 +45,10 @@ $animationTime: #{1.5}s;
 
 .scills__container{
    display: flex;
+   flex-wrap: wrap;
+   margin: 0px 20px;
+   justify-content: center;
+   text-align: center;
    position: relative;
 }
 .scills__mainPart{
@@ -61,7 +65,10 @@ $animationTime: #{1.5}s;
       0 0 0 rgba(244, 132, 197, 0.663), 0 0 0 rgba(244, 132, 197, 0.663) inset,
       2px 2px 2px rgba(244, 132, 197, 0.663) inset;
 }
-
+.mainPartContainer,
+.addPartContainer{
+    position: relative;
+}
 .scills__partName{
     position: absolute;
     background-color: rgba(244, 132, 197, 0.736);
@@ -74,13 +81,12 @@ $animationTime: #{1.5}s;
     letter-spacing: 0.15em;
     border-radius: 6px;
 }
-.basic{
+.basic,.additional{
     left: 0px;
 }
-.additional{
-    left: 660px;
-}
+
 .scills__additional{
+    position: relative;
     z-index: 10;
     margin-bottom: 50px;
     border-radius: 20px;
@@ -143,4 +149,39 @@ $animationTime: #{1.5}s;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 0.15em;
+}
+
+
+@media (max-width:990px){
+    .scills__additional{
+        padding: 30px 100px;
+    }
+    .scills__mainPart{
+        margin: 0 auto;
+        margin-bottom: 70px;
+    }
+}
+@media (max-width:768px){
+    .scills{
+        padding: 50px 0px 0px 0px;
+    }
+}
+@media (max-width:620px){
+    .scills__mainPart{
+      
+        grid-template-columns: repeat(2, auto);
+       
+    }
+}
+@media (max-width:435px){
+    .scills__icon{
+        width: 60px;
+        height: auto;
+    }
+    .scills__item{
+        padding: 10px;
+    }
+    .scills__additional{
+        padding: 30px 60px;
+    }
 }
