@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.96ed8a84.css",
-    "main.js": "/portfolio/static/js/main.c037e02d.js",
+    "main.css": "/portfolio/static/css/main.2e5cd192.css",
+    "main.js": "/portfolio/static/js/main.b1eecd5c.js",
     "static/css/912.f39c4f33.chunk.css": "/portfolio/static/css/912.f39c4f33.chunk.css",
-    "static/js/912.928b23d8.chunk.js": "/portfolio/static/js/912.928b23d8.chunk.js",
+    "static/js/912.ebba1b34.chunk.js": "/portfolio/static/js/912.ebba1b34.chunk.js",
     "static/media/toursScrin.png": "/portfolio/static/media/toursScrin.c35144bc761d9ffc2f89.png",
     "static/media/htmlIcon.png": "/portfolio/static/media/htmlIcon.6f91f35504f12cc7ae77.png",
     "static/media/housesScrin.png": "/portfolio/static/media/housesScrin.d1d5d26a4189b8412f30.png",
@@ -23,13 +23,13 @@
     "static/media/poppins-v20-latin-600.woff2": "/portfolio/static/media/poppins-v20-latin-600.91145014c0350c248ed2.woff2",
     "static/media/poppins-v20-latin-regular.woff2": "/portfolio/static/media/poppins-v20-latin-regular.405055dd680fa1dcdfa2.woff2",
     "index.html": "/portfolio/index.html",
-    "main.96ed8a84.css.map": "/portfolio/static/css/main.96ed8a84.css.map",
-    "main.c037e02d.js.map": "/portfolio/static/js/main.c037e02d.js.map",
+    "main.2e5cd192.css.map": "/portfolio/static/css/main.2e5cd192.css.map",
+    "main.b1eecd5c.js.map": "/portfolio/static/js/main.b1eecd5c.js.map",
     "912.f39c4f33.chunk.css.map": "/portfolio/static/css/912.f39c4f33.chunk.css.map",
-    "912.928b23d8.chunk.js.map": "/portfolio/static/js/912.928b23d8.chunk.js.map"
+    "912.ebba1b34.chunk.js.map": "/portfolio/static/js/912.ebba1b34.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.96ed8a84.css",
-    "static/js/main.c037e02d.js"
+    "static/css/main.2e5cd192.css",
+    "static/js/main.b1eecd5c.js"
   ]
 }
