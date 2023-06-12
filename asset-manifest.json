@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.ba60f4ca.css",
-    "main.js": "/portfolio/static/js/main.37e54137.js",
-    "static/css/912.dd8e79a7.chunk.css": "/portfolio/static/css/912.dd8e79a7.chunk.css",
+    "main.css": "/portfolio/static/css/main.ee187815.css",
+    "main.js": "/portfolio/static/js/main.1fb1f7b8.js",
+    "static/css/912.9df3807a.chunk.css": "/portfolio/static/css/912.9df3807a.chunk.css",
     "static/js/912.928b23d8.chunk.js": "/portfolio/static/js/912.928b23d8.chunk.js",
     "static/media/toursScrin.png": "/portfolio/static/media/toursScrin.c35144bc761d9ffc2f89.png",
     "static/media/htmlIcon.png": "/portfolio/static/media/htmlIcon.6f91f35504f12cc7ae77.png",
@@ -23,13 +23,13 @@
     "static/media/poppins-v20-latin-600.woff2": "/portfolio/static/media/poppins-v20-latin-600.91145014c0350c248ed2.woff2",
     "static/media/poppins-v20-latin-regular.woff2": "/portfolio/static/media/poppins-v20-latin-regular.405055dd680fa1dcdfa2.woff2",
     "index.html": "/portfolio/index.html",
-    "main.ba60f4ca.css.map": "/portfolio/static/css/main.ba60f4ca.css.map",
-    "main.37e54137.js.map": "/portfolio/static/js/main.37e54137.js.map",
-    "912.dd8e79a7.chunk.css.map": "/portfolio/static/css/912.dd8e79a7.chunk.css.map",
+    "main.ee187815.css.map": "/portfolio/static/css/main.ee187815.css.map",
+    "main.1fb1f7b8.js.map": "/portfolio/static/js/main.1fb1f7b8.js.map",
+    "912.9df3807a.chunk.css.map": "/portfolio/static/css/912.9df3807a.chunk.css.map",
     "912.928b23d8.chunk.js.map": "/portfolio/static/js/912.928b23d8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba60f4ca.css",
-    "static/js/main.37e54137.js"
+    "static/css/main.ee187815.css",
+    "static/js/main.1fb1f7b8.js"
   ]
 }
