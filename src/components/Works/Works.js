@@ -10,7 +10,6 @@ import testingScrin from "../../img/TestScrin.png"
 import WorkItem from "./WorkItem"
 import { useState } from "react"
 
-
 const Works = () =>{
     const dataArr =[
         {
@@ -79,7 +78,8 @@ const Works = () =>{
         <div className={s.works}>
             <h1 className={s.header}>My works</h1>
             <div className={s.filterBtns}>
-                
+
+
                 <button className={isActive===0 ? `${s.filterBtns__item} ${s.filterBtns__item_active}`: 
                 s.filterBtns__item} onClick={(e)=>filterProj(e)}>All</button>
                 <button className={isActive===1 ? `${s.filterBtns__item} ${s.filterBtns__item_active}`: s.filterBtns__item} 
