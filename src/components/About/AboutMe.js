@@ -5,8 +5,13 @@ import robot from "../../img/robot.png"
 import nout from "../../img/noutPic.png"
 import book from "../../img/bookPic.png"
 import portfolio from "../../img/portfolioPic.png"
+import { useEffect } from "react"
 
 const AboutMe = () =>{
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+      
     return(
         <div className={s.aboutMe}>
             <h1 className={s.header}>About me</h1>

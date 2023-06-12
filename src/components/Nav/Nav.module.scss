@@ -76,7 +76,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    // margin-bottom: 50px;
     box-shadow: 
                 rgba(255, 147, 203, 0.3) 0px -12px 13px,
                 rgba(255, 147, 203, 0.3) 0px 4px 13px, 
@@ -84,55 +83,9 @@
                 rgba(255, 147, 203, 0.3) 0px -3px 13px;
 }
 
-@media (max-height:600px){
-.nav__item{
-    padding: 15px 0px;
+.closeBtn,
+.burger{
+    display: none;
 }
-}
-@media (max-width:768px){
-    .nav{
-        box-sizing: border-box;
-        min-height: 30px;
-        width: 100%;
-        flex-direction: row;
-        padding: 15px 40px;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .nav__imgBlok{
-        margin-bottom: 0px;      
-    }
-    .nav__list{
-        display: none;
-    }
-    .works{
-        padding: 0px;
-    }
-    .burger{
-        display: block;
-        position: relative;
-        width: 30px;
-        height: 20px;
-    }
-    .burger span{
-        position: absolute;
-        background-color: white;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        top: 0px
-    }
-    .burger::before,
-    .burger::after{
-        content: "";
-        position: absolute;
-        background-color: white;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        top: 9px
-    }
-    .burger::before{
-        top:18px
-    }
-}
+
+@import "./Nav-media.module.scss"

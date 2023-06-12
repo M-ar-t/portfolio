@@ -1,9 +1,12 @@
 import { NavLink } from "react-router-dom"
 import s from "./Works.module.scss"
 import arrow from "../../img/arrow.png"
+import { useEffect } from "react";
 
 const WorkItem = ({pic, header,link,...props}) =>{
-    console.log(link);
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     return(
         <div className={s.workContainer__item}>
             <img src={pic} alt="" className={s.workContainer__pic}/>

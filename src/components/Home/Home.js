@@ -4,6 +4,9 @@ import ava from "../../img/ava_cut.png"
 import { useEffect, useState } from "react"
 
 const Home = () =>{
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     
     const [subtitle, setSubtitle] = useState("");
 

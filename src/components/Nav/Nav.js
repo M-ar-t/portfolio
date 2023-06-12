@@ -1,20 +1,32 @@
 import s from "./Nav.module.scss"
 import bear from "../../img/bear.png"
 import { NavLink } from 'react-router-dom';
+import closeBurger from "../../img/closeBurger.png"
+import { useState } from "react";
+
 const Nav = () =>{
+    const[toggle, setToggle] =useState(false)
+
+    const burgerMenuShow =() =>{
+        setToggle(!toggle)
+    }
     return(
         <div className={s.nav}>
            
            <div className={s.nav__imgBlok}> <img className={s.nav__img} src = {bear} alt="logo"/></div>
-           <div className={s.burger}>
+           <div className={s.burger} onClick={burgerMenuShow}>
                 <span></span>
             </div>
-            <ul className={s.nav__list}>
-                <NavLink to="/"  className={({ isActive }) => isActive ? s.nav__item_active : s.nav__item}>Home</NavLink>
-                <NavLink to="/about" className={({ isActive }) => isActive ? s.nav__item_active : s.nav__item}>About</NavLink>
-                <NavLink to="/scills" className={({ isActive }) => isActive ? s.nav__item_active : s.nav__item}>Scills</NavLink>
-                <NavLink to="/works" className={({ isActive }) => isActive ? s.nav__item_active : s.nav__item}>Works</NavLink>
-                <NavLink to="/contacts" className={({ isActive }) => isActive ? s.nav__item_active : s.nav__item}>Contacts</NavLink>
+
+            {toggle && <div className={s.closeBtn} onClick={burgerMenuShow}>
+                <img className={s.closeBtn__pic} src={closeBurger} alt=""/>
+                </div>}
+            <ul  className={toggle? [s.nav__list, s.active].join(" "):s.nav__list}>
+                <NavLink  to="/"  onClick={burgerMenuShow} className={({ isActive }) => isActive ? s.nav__item_active : s.nav__item}>Home</NavLink>
+                <NavLink to="/about" onClick={burgerMenuShow} className={({ isActive }) => isActive ? s.nav__item_active : s.nav__item}>About</NavLink>
+                <NavLink to="/scills" onClick={burgerMenuShow} className={({ isActive }) => isActive ? s.nav__item_active : s.nav__item}>Scills</NavLink>
+                <NavLink to="/works" onClick={burgerMenuShow} className={({ isActive }) => isActive ? s.nav__item_active : s.nav__item}>Works</NavLink>
+                <NavLink to="/contacts" onClick={burgerMenuShow} className={({ isActive }) => isActive ? s.nav__item_active : s.nav__item}>Contacts</NavLink>
             </ul>
         </div>
     )

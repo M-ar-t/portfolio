@@ -1,10 +1,8 @@
+
 @media (max-width:1300px){
     .workContainer{
         grid-template-columns: repeat(2,350px);
         gap:40px;
-    }
-    .filterBtns{
-        width: 40%;
     }
 }
 @media (max-width:920px){
@@ -13,18 +11,10 @@
         gap:40px;
     }
     .filterBtns{
+        width: 250px;
        display: grid;
        grid-template-columns: repeat(2,auto);
        gap: 15px;
-    }
-    .filterBtns__item{
-        border:none;
-        background-color: #FFB7EA;
-        color: #0b0a0fa8;
-        border-radius: 6px;
-        font-size: 16px;
-        font-weight: 600;
-        padding: 10px 15px;
     }
 }
 @media (max-width:768px){

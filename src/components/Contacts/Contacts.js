@@ -5,8 +5,12 @@ import telega from "../../img/telega.png"
 import vk from "../../img/vk.png"
 import ContactItem from "./ContactItem"
 import file from "../../Portfolio.docx" 
+import { useEffect } from "react"
 
 const Contacts = () =>{
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
 const data =[
             {
                 icon:mail,

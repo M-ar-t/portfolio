@@ -102,23 +102,4 @@ $animationTime: #{1}s;
   margin-right: 20px;
 }
 
-
-
-@media (max-width:1020px){
-   
-    .aboutMe__box {
-        width: auto;
-        height: auto;
-        animation: none;
-      }
-      .aboutMe{
-        padding: 0px 20px 0px 140px;
-      }
-}
-
-@media (max-width:768px){
-    .aboutMe{
-        padding: 50px 20px 0px 20px;
-    }
-   
-}
+@import "./AboutMe-media.module.scss"

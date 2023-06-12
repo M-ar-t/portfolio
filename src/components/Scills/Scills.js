@@ -6,8 +6,12 @@ import scssLogo from "../../img/scssIcon.png"
 import jsLogo from "../../img/jsIcon.png"
 import reactLogo from "../../img/reactIcon.png"
 import reduxLogo from "../../img/redux.jpeg"
+import { useEffect } from "react"
 
 const Scills = () =>{
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     return(
         <div className={s.scills}>
             <h1 className={s.header}>My scills</h1>
