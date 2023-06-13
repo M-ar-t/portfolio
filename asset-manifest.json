@@ -1,35 +1,35 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.7595a088.css",
-    "main.js": "/portfolio/static/js/main.b1eecd5c.js",
+    "main.js": "/portfolio/static/js/main.8af6e080.js",
     "static/css/912.f39c4f33.chunk.css": "/portfolio/static/css/912.f39c4f33.chunk.css",
-    "static/js/912.ebba1b34.chunk.js": "/portfolio/static/js/912.ebba1b34.chunk.js",
-    "static/media/toursScrin.png": "/portfolio/static/media/toursScrin.c35144bc761d9ffc2f89.png",
-    "static/media/htmlIcon.png": "/portfolio/static/media/htmlIcon.6f91f35504f12cc7ae77.png",
-    "static/media/housesScrin.png": "/portfolio/static/media/housesScrin.d1d5d26a4189b8412f30.png",
-    "static/media/modelingScrin.png": "/portfolio/static/media/modelingScrin.cd571de5e8a231db82c7.png",
-    "static/media/ava_cut.png": "/portfolio/static/media/ava_cut.35f6895cffbea1e06aea.png",
+    "static/js/912.ada05898.chunk.js": "/portfolio/static/js/912.ada05898.chunk.js",
+    "static/media/toursScrin.png": "/portfolio/static/media/toursScrin.8c054cc16a47da3168cc.png",
+    "static/media/htmlIcon.png": "/portfolio/static/media/htmlIcon.3a57f68888cb9013d841.png",
     "static/media/storeScrin.png": "/portfolio/static/media/storeScrin.4ea4d8e8c2bc17971819.png",
-    "static/media/jsIcon.png": "/portfolio/static/media/jsIcon.ac7a57fd9e0eed648be2.png",
+    "static/media/housesScrin.png": "/portfolio/static/media/housesScrin.212c87b063042d0be002.png",
+    "static/media/ava_cut.png": "/portfolio/static/media/ava_cut.43275677f298567aae63.png",
+    "static/media/modelingScrin.png": "/portfolio/static/media/modelingScrin.536bece31ffa176e369a.png",
     "static/media/redux.jpeg": "/portfolio/static/media/redux.b01281dbd31edbd9a58d.jpeg",
-    "static/media/bear.png": "/portfolio/static/media/bear.98116cda7da0da41e7bb.png",
-    "static/media/TestScrin.png": "/portfolio/static/media/TestScrin.74edecfb73ea1171e2cf.png",
-    "static/media/calculatorScrin.png": "/portfolio/static/media/calculatorScrin.b091034718f688d5f9b4.png",
     "static/media/reactIcon.png": "/portfolio/static/media/reactIcon.7ba87321a19fd375647e.png",
     "static/media/scssIcon.png": "/portfolio/static/media/scssIcon.7233df514f0df499e9bb.png",
-    "static/media/cssIcon.png": "/portfolio/static/media/cssIcon.d9bc98389ae9171d98a8.png",
+    "static/media/jsIcon.png": "/portfolio/static/media/jsIcon.61dd7a33e26f6a3e187c.png",
+    "static/media/bear.png": "/portfolio/static/media/bear.6d2b290e9ead2a24ecd5.png",
+    "static/media/TestScrin.png": "/portfolio/static/media/TestScrin.acf427d2863944ebe9aa.png",
+    "static/media/calculatorScrin.png": "/portfolio/static/media/calculatorScrin.f2e3bf1e6d78d3d21bba.png",
     "static/media/Portfolio.docx": "/portfolio/static/media/Portfolio.c45e813620742e6655ef.docx",
     "static/media/preloader.gif": "/portfolio/static/media/preloader.3ab88434ca15de892af3.gif",
+    "static/media/cssIcon.png": "/portfolio/static/media/cssIcon.fd1e85a52ec9e7d5f9c7.png",
     "static/media/poppins-v20-latin-600.woff2": "/portfolio/static/media/poppins-v20-latin-600.91145014c0350c248ed2.woff2",
     "static/media/poppins-v20-latin-regular.woff2": "/portfolio/static/media/poppins-v20-latin-regular.405055dd680fa1dcdfa2.woff2",
     "index.html": "/portfolio/index.html",
     "main.7595a088.css.map": "/portfolio/static/css/main.7595a088.css.map",
-    "main.b1eecd5c.js.map": "/portfolio/static/js/main.b1eecd5c.js.map",
+    "main.8af6e080.js.map": "/portfolio/static/js/main.8af6e080.js.map",
     "912.f39c4f33.chunk.css.map": "/portfolio/static/css/912.f39c4f33.chunk.css.map",
-    "912.ebba1b34.chunk.js.map": "/portfolio/static/js/912.ebba1b34.chunk.js.map"
+    "912.ada05898.chunk.js.map": "/portfolio/static/js/912.ada05898.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7595a088.css",
-    "static/js/main.b1eecd5c.js"
+    "static/js/main.8af6e080.js"
   ]
 }
