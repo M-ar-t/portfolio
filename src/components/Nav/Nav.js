@@ -18,9 +18,10 @@ const Nav = () =>{
                 <span></span>
             </div>
 
-            {toggle && <div className={s.closeBtn} onClick={burgerMenuShow}>
+            <div className={toggle? [s.closeBtn, s.activeBtn].join(" "):s.closeBtn}
+            onClick={burgerMenuShow}>
                 <img className={s.closeBtn__pic} src={closeBurger} alt=""/>
-                </div>}
+                </div>
             <ul  className={toggle? [s.nav__list, s.active].join(" "):s.nav__list}>
                 <NavLink  to="/"  onClick={burgerMenuShow} className={({ isActive }) => isActive ? s.nav__item_active : s.nav__item}>Home</NavLink>
                 <NavLink to="/about" onClick={burgerMenuShow} className={({ isActive }) => isActive ? s.nav__item_active : s.nav__item}>About</NavLink>

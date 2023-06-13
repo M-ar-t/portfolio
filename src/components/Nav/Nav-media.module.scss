@@ -26,10 +26,8 @@
       background-color: #0b0a0f;
       transition: .4s; 
     }
-    .active{
-      left: 0;    
-      transition: .4s; 
-    }
+  
+ 
     .nav__item{
         display: flex;
         writing-mode: horizontal-tb;
@@ -54,10 +52,21 @@
         cursor: pointer;
     }
     .closeBtn{
-       padding: 20px 0px 0px 0px;
+        position: fixed;
+        top:0;
+        left: -120%;
+        padding: 20px 0px 0px 0px;
         display: block;
-        z-index: 1;
+        z-index: 1000;    
     }
+    .active{
+        left: 0;    
+        transition: .4s; 
+      }
+    .activeBtn{
+        left: 80%;    
+        transition: .4s; 
+      }
     .burger span{
         position: absolute;
         background-color: white;
