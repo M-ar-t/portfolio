@@ -46,12 +46,12 @@ const AboutMe = () =>{
                     </li>
                 </ul>
             </div>
-            <NavLink to ="/scills" className={s.neonBtn}>
+            <NavLink to ="/skills" className={s.neonBtn}>
                     <span className={`${s.neonBtn__line} ${s.topLine}`}></span>
                     <span className={`${s.neonBtn__line} ${s.rightLine}`}></span>
                     <span className={`${s.neonBtn__line} ${s.bottomLine}`}></span>
                     <span className={`${s.neonBtn__line} ${s.leftLine}`}></span>
-                    My scills
+                    My skills
             </NavLink>
            
         </div>

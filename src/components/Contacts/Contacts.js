@@ -4,7 +4,7 @@ import git from "../../img/gitHub.png"
 import telega from "../../img/telega.png"
 import vk from "../../img/vk.png"
 import ContactItem from "./ContactItem"
-import file from "../../Portfolio.docx" 
+import file from "../../Portfolio.pdf" 
 import { useEffect } from "react"
 
 const Contacts = () =>{

@@ -25,7 +25,7 @@ const Nav = () =>{
             <ul  className={toggle? [s.nav__list, s.active].join(" "):s.nav__list}>
                 <NavLink  to="/"  onClick={burgerMenuShow} className={({ isActive }) => isActive ? s.nav__item_active : s.nav__item}>Home</NavLink>
                 <NavLink to="/about" onClick={burgerMenuShow} className={({ isActive }) => isActive ? s.nav__item_active : s.nav__item}>About</NavLink>
-                <NavLink to="/scills" onClick={burgerMenuShow} className={({ isActive }) => isActive ? s.nav__item_active : s.nav__item}>Scills</NavLink>
+                <NavLink to="/skills" onClick={burgerMenuShow} className={({ isActive }) => isActive ? s.nav__item_active : s.nav__item}>Skills</NavLink>
                 <NavLink to="/works" onClick={burgerMenuShow} className={({ isActive }) => isActive ? s.nav__item_active : s.nav__item}>Works</NavLink>
                 <NavLink to="/contacts" onClick={burgerMenuShow} className={({ isActive }) => isActive ? s.nav__item_active : s.nav__item}>Contacts</NavLink>
             </ul>

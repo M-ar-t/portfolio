@@ -14,7 +14,7 @@ const Scills = () =>{
       }, []);
     return(
         <div className={s.scills}>
-            <h1 className={s.header}>My scills</h1>
+            <h1 className={s.header}>My skills</h1>
             <div className={s.scills__container}>      
 
                 <div className={s.mainPartContainer}>
